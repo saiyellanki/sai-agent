@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saikrishna Yellanki | Executive Cybersecurity Portfolio & AI Command Center</title>
-    <!-- Inter & JetBrains Mono Fonts -->
+    <title>Saikrishna Yellanki | Executive Cybersecurity Portfolio & Command Center</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -319,7 +319,7 @@
                                 <h4 class="text-xs font-bold text-brand-emerald uppercase flex items-center gap-1.5 mb-1">
                                     <i class="fa-solid fa-circle-nodes"></i> Instant Fit Analyzer
                                 </h4>
-                                <p class="text-[11px] text-slate-300">Paste any executive JD below. Our LLM parses your parameters directly against Sai's full credentials, outputs a matching score, and drafts a tailored cover letter!</p>
+                                <p class="text-[11px] text-slate-300">Paste any executive JD below. Our LLM parses your parameters directly against Sai's credentials, outputs a matching score, and drafts a tailored cover letter!</p>
                             </div>
 
                             <div class="space-y-2">
@@ -580,10 +580,7 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        // Leaves API Key empty so runtime context seamlessly provisions it
         const apiKey = "";
-        
-        // SECURE ROUTING: Points to your live Cloudflare Worker proxy
         const secureProxyUrl = "https://sai-agent.syellank.workers.dev";
         
         const systemPrompt = `
@@ -652,10 +649,8 @@
         }
 
         async function callGeminiAPI(userQuery, customSystemPrompt, retries = 3, delay = 1000) {
-            // Check if we are running locally/canvas or live production
             const isLocalOrCanvas = apiKey !== "" || window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
             
-            // Route dynamically: Direct to Google if Key exists, otherwise route securely through Cloudflare proxy
             const apiUrl = isLocalOrCanvas 
                 ? `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`
                 : `${secureProxyUrl}?model=gemini-3-flash-preview`;
@@ -796,7 +791,7 @@
             return text
                 .replace(/### (.*)/g, '<h4 class="text-xs font-bold text-brand-emerald uppercase tracking-wider mt-3 mb-1">$1</h4>')
                 .replace(/## (.*)/g, '<h3 class="text-sm font-bold text-white mt-4 mb-2 border-b border-brand-card/40 pb-1">$1</h3>')
-                .replace(/\*\*(.*?)\*\"/g, '<strong class="text-white font-semibold">$1</strong>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
                 .replace(/\* (.*)/g, '<li class="ml-4 list-disc text-slate-300 mt-1">$1</li>')
                 .replace(/\n\n/g, '<p class="mb-3"></p>')
                 .replace(/\n/g, '<br>');
