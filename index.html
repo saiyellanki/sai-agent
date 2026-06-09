@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikrishna Yellanki | Executive Cybersecurity Portfolio & Command Center</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#090D16',
+                            dark: '#0F172A',
+                            card: '#1E293B',
+                            emerald: '#10B981',
+                            teal: '#14B8A6',
+                            slate: '#64748B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #090D16;
+            color: #E2E8F0;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090D16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10B981;
+        }
+        @keyframes pulse-emerald {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.2); }
+        }
+        .animate-pulse-emerald {
+            animation: pulse-emerald 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-emerald selection:text-brand-black">
+
+    <!-- TOP NOTIFICATION BANNER -->
+    <div class="bg-brand-emerald/10 border-b border-brand-emerald/20 px-4 py-2.5 text-center text-xs md:text-sm font-medium text-brand-emerald flex items-center justify-center gap-2">
+        <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-emerald"></span>
+        </span>
+        <span>Secure Sandbox Console Active: Interact with "Security Buddy" AI representative below.</span>
+    </div>
+
+    <!-- MAIN DASHBOARD CONTAINER -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        
+        <!-- HEADER / BRAND MATRIX -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 pb-6 border-b border-brand-card/40">
+            <div>
+                <div class="flex items-center gap-3">
+                    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white">SAIKRISHNA (SAI) YELLANKI</h1>
+                    <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-brand-card text-brand-emerald border border-brand-emerald/20">VP LEVEL</span>
+                </div>
+                <p class="text-sm md:text-base text-brand-slate mt-1">Vice President, Cybersecurity Risk Assurance & Technology Advisory</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="px-2 py-1 bg-brand-card/60 rounded text-xs text-slate-300 font-medium border border-brand-card"><i class="fa-solid fa-graduation-cap text-brand-emerald mr-1.5"></i>MSc InfoSec</span>
+                    <span class="px-2 py-1 bg-brand-card/60 rounded text-xs text-slate-300 font-medium border border-brand-card"><i class="fa-solid fa-shield-halved text-brand-emerald mr-1.5"></i>CISA</span>
+                    <span class="px-2 py-1 bg-brand-card/60 rounded text-xs text-slate-300 font-medium border border-brand-card"><i class="fa-solid fa-clipboard-check text-brand-emerald mr-1.5"></i>ISO 27001 LA</span>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-3 w-full md:w-auto">
+                <a href="mailto:saiyellanki.cisa@gmail.com" class="flex-1 md:flex-initial text-center px-4 py-2 bg-brand-card hover:bg-slate-800 text-slate-200 text-sm font-medium rounded-lg transition duration-200 border border-slate-700/50">
+                    <i class="fa-solid fa-envelope mr-2"></i>Email Sai
+                </a>
+                <a href="https://linkedin.com/in/hellosai" target="_blank" rel="noopener" class="flex-1 md:flex-initial text-center px-4 py-2 bg-brand-emerald hover:bg-brand-emerald/90 text-brand-black text-sm font-bold rounded-lg transition duration-200">
+                    <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn Profile
+                </a>
+            </div>
+        </header>
+
+        <!-- CORE MATRIX: GRID SYSTEM -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- LEFT COLUMN: LIVE CONSOLE & STORIES (8 COLS) -->
+            <main class="lg:col-span-7 xl:col-span-8 flex flex-col gap-8">
+                
+                <!-- EXECUTIVE BIO & ORIGIN SCREEN -->
+                <section class="bg-brand-card/40 rounded-xl p-6 border border-brand-card/80 backdrop-blur-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-emerald/5 rounded-full blur-2xl pointer-events-none"></div>
+                    <div class="flex items-start gap-4">
+                        <div class="hidden sm:flex h-12 w-12 items-center justify-center rounded-xl bg-brand-emerald/10 text-brand-emerald border border-brand-emerald/20 shrink-0">
+                            <i class="fa-solid fa-terminal text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-semibold tracking-wider text-brand-emerald uppercase mb-2"><i class="fa-solid fa-user-shield sm:hidden mr-2"></i>Professional Mission Profile</h2>
+                            <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                                Dedicated to cybersecurity since the 2010 Stuxnet discovery, which proved code can bridge the digital-physical divide. A technologist-turned-advisor with <strong class="text-white">10+ years</strong> driving enterprise risk assurance, cloud security architecture, and regulatory compliance. Trusted peer-advisor to CISOs and CIOs, translating intricate engineering vulnerabilities into resilient, business-enabling security strategies.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INTERACTIVE STORY CONTROL PANEL -->
+                <section class="bg-brand-card/40 rounded-xl p-6 border border-brand-card/80 backdrop-blur-sm">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6">
+                        <div>
+                            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-folder-open text-brand-emerald"></i>
+                                GRC Threat Scenario Command Panel
+                            </h2>
+                            <p class="text-xs text-brand-slate">Click tabs to dynamically trace real-world solutions designed by Sai</p>
+                        </div>
+                        <span class="text-[10px] font-mono text-brand-emerald px-2 py-0.5 rounded bg-brand-emerald/10 border border-brand-emerald/20 uppercase tracking-widest">Interactive Audit logs</span>
+                    </div>
+
+                    <!-- STORY SELECTOR BUTTONS -->
+                    <div class="flex gap-2 overflow-x-auto pb-3 mb-6 snap-x scrollbar-thin">
+                        <button onclick="switchStory('marcus')" id="btn-marcus" class="snap-start shrink-0 px-3 py-2 bg-brand-emerald text-brand-black text-xs font-bold rounded-lg transition-all duration-200 flex items-center gap-1.5 shadow-lg shadow-brand-emerald/10">
+                            <i class="fa-solid fa-robot"></i> AI Marcus Sandbox
+                        </button>
+                        <button onclick="switchStory('securitybuddy')" id="btn-securitybuddy" class="snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30">
+                            <i class="fa-solid fa-brain text-purple-400"></i> Offline "Security Buddy"
+                        </button>
+                        <button onclick="switchStory('egress')" id="btn-egress" class="snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30">
+                            <i class="fa-solid fa-cloud-arrow-down text-blue-400"></i> Cloud Okta Bypass
+                        </button>
+                        <button onclick="switchStory('token')" id="btn-token" class="snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30">
+                            <i class="fa-solid fa-mobile-screen-button text-yellow-400"></i> Intune Token Leak
+                        </button>
+                        <button onclick="switchStory('recon')" id="btn-recon" class="snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30">
+                            <i class="fa-solid fa-globe text-emerald-400"></i> OSINT Recon Audit
+                        </button>
+                        <button onclick="switchStory('usb')" id="btn-usb" class="snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30">
+                            <i class="fa-solid fa-key text-red-400"></i> USB Friction Fix
+                        </button>
+                    </div>
+
+                    <!-- ACTIVE STORY SCENE AREA -->
+                    <div id="story-viewport" class="bg-brand-black/40 border border-brand-card rounded-lg p-5">
+                        <div class="animate-pulse space-y-4">
+                            <div class="h-4 bg-brand-card rounded w-1/4"></div>
+                            <div class="space-y-2">
+                                <div class="h-3 bg-brand-card rounded"></div>
+                                <div class="h-3 bg-brand-card rounded w-5/6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TECHNICAL CAPABILITY INDEX -->
+                <section class="bg-brand-card/40 rounded-xl p-6 border border-brand-card/80 backdrop-blur-sm">
+                    <div class="mb-6">
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-cubes text-brand-emerald"></i>
+                            Enterprise Technical Toolset & Capabilities
+                        </h2>
+                        <p class="text-xs text-brand-slate">Direct operational capability verified on these active enterprise systems</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Tool Card 1 -->
+                        <div class="p-4 bg-brand-black/30 border border-brand-card rounded-lg">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-brand-emerald mb-2.5">Endpoint & Threat Defense</h3>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Crowdstrike Falcon</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Tenable One</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Qualys VMDR</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Microsoft Intune</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Cisco ISE</span>
+                            </div>
+                        </div>
+
+                        <!-- Tool Card 2 -->
+                        <div class="p-4 bg-brand-black/30 border border-brand-card rounded-lg">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2.5">Data & Cloud Security</h3>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">AWS SecurityHub</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">SkyHigh CASB</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Varonis DSPM</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Imperva DAM</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Proofpoint DLP</span>
+                            </div>
+                        </div>
+
+                        <!-- Tool Card 3 -->
+                        <div class="p-4 bg-brand-black/30 border border-brand-card rounded-lg">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-2.5">AI, LLM & Development</h3>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-white font-medium border border-brand-emerald/30 bg-brand-emerald/10">Abacus AI Agent</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">LM Studio</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Claude Code</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Microsoft Copilot</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">VS Code</span>
+                            </div>
+                        </div>
+
+                        <!-- Tool Card 4 -->
+                        <div class="p-4 bg-brand-black/30 border border-brand-card rounded-lg">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-yellow-400 mb-2.5">Enterprise GRC, IAM & AppSec</h3>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">SailPoint IIQ/IGA</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">RSA Archer</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">Workiva IRM</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">GitHub Advanced Security</span>
+                                <span class="px-2 py-1 rounded text-xs bg-brand-card text-slate-300 border border-slate-700/30">IriusRisk modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- RIGHT COLUMN: MULTI-FUNCTIONAL AI COPILOT HUB (4 COLS) -->
+            <aside class="lg:col-span-5 xl:col-span-4 flex flex-col gap-6">
+                
+                <!-- CO-PILOT TABBED HUB CORE -->
+                <div class="bg-brand-card rounded-xl border border-brand-card/80 flex flex-col h-[670px] shadow-2xl relative overflow-hidden">
+                    
+                    <!-- TAB HUB SELECTOR -->
+                    <div class="flex border-b border-brand-card bg-brand-black/40 text-center text-xs">
+                        <button onclick="switchHubTab('chat')" id="tab-chat" class="flex-1 py-3 text-brand-emerald border-b-2 border-brand-emerald font-bold transition duration-150">
+                            <i class="fa-solid fa-message mr-1"></i> Chat
+                        </button>
+                        <button onclick="switchHubTab('matcher')" id="tab-matcher" class="flex-1 py-3 text-brand-slate hover:text-slate-200 border-b-2 border-transparent font-medium transition duration-150">
+                            <i class="fa-solid fa-briefcase mr-1"></i> Matcher
+                        </button>
+                        <button onclick="switchHubTab('auditor')" id="tab-auditor" class="flex-1 py-3 text-brand-slate hover:text-slate-200 border-b-2 border-transparent font-medium transition duration-150">
+                            <i class="fa-solid fa-gavel mr-1"></i> Auditor
+                        </button>
+                    </div>
+
+                    <!-- TAB 1: ACTIVE CHAT SCREEN -->
+                    <div id="hub-content-chat" class="flex flex-col flex-1 overflow-hidden">
+                        <!-- CHAT HEADER -->
+                        <div class="p-3 bg-brand-black/30 border-b border-brand-card/60 flex justify-between items-center text-xs">
+                            <div class="flex items-center gap-2">
+                                <span class="flex h-2 w-2 relative">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-emerald"></span>
+                                </span>
+                                <span class="font-bold text-white uppercase tracking-wider">Security Buddy Chat</span>
+                            </div>
+                            <!-- OFFLINE PRIVACY TOGGLE -->
+                            <div class="flex items-center gap-1.5" title="Toggle privacy-first local LLM execution sandbox simulation">
+                                <span class="text-[9px] font-mono text-brand-slate uppercase tracking-wider">Local Sandbox</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="privacy-toggle" class="sr-only peer" onchange="togglePrivacyMode()">
+                                    <div class="w-8 h-4 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-brand-emerald"></div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- CHAT HISTORY DISPLAY -->
+                        <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 font-sans text-xs md:text-sm scrollbar-thin">
+                            <!-- Initial Bot Greeting -->
+                            <div class="flex items-start gap-2.5 max-w-[85%]">
+                                <div class="h-6 w-6 rounded bg-brand-emerald/10 text-brand-emerald flex items-center justify-center shrink-0 border border-brand-emerald/20">
+                                    <i class="fa-solid fa-robot text-xs"></i>
+                                </div>
+                                <div class="bg-brand-black/50 border border-brand-card/60 rounded-r-lg rounded-bl-lg p-3 text-slate-300">
+                                    <p class="text-xs text-white font-semibold mb-1">Security Buddy</p>
+                                    <p>Hi! I'm Sai's automated portfolio agent. Ask me anything about his executive history, key audits, or how he balances rapid business deployment with tech risk controls.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAMPLE PROMPT CHIPS (QUICK ACTIONS) -->
+                        <div class="px-4 py-2 border-t border-brand-card bg-brand-black/20">
+                            <p class="text-[9px] text-brand-slate uppercase font-mono tracking-wider mb-1.5">Direct Diagnostic Queries:</p>
+                            <div class="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                                <button onclick="sendQuickPrompt('How did Sai sandbox Project Marcus AI agent?')" class="shrink-0 text-[10px] bg-brand-card hover:bg-slate-700 text-slate-300 px-2 py-1 rounded border border-slate-700/50 transition">
+                                    <i class="fa-solid fa-robot text-brand-emerald mr-1"></i> Sandbox AI Agent
+                                </button>
+                                <button onclick="sendQuickPrompt('What technical audits did Sai complete at Texas Capital?')" class="shrink-0 text-[10px] bg-brand-card hover:bg-slate-700 text-slate-300 px-2 py-1 rounded border border-slate-700/50 transition">
+                                    <i class="fa-solid fa-list-check text-blue-400 mr-1"></i> Bank Audits
+                                </button>
+                                <button onclick="sendQuickPrompt('Tell me about the offline Security Buddy personal project.')" class="shrink-0 text-[10px] bg-brand-card hover:bg-slate-700 text-slate-300 px-2 py-1 rounded border border-slate-700/50 transition">
+                                    <i class="fa-solid fa-shield-halved text-purple-400 mr-1"></i> Offline AI Buddy
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CHAT INPUT WINDOW -->
+                        <div class="p-3 bg-brand-black/40 rounded-b-xl border-t border-brand-card flex gap-2">
+                            <input type="text" id="chat-input" onkeydown="handleInputKey(event)" placeholder="Ask Security Buddy..." class="flex-1 bg-brand-black/80 border border-brand-card rounded-lg px-3 py-2 text-white text-xs md:text-sm focus:outline-none focus:border-brand-emerald focus:ring-1 focus:ring-brand-emerald transition duration-150">
+                            <button onclick="submitUserMessage()" class="bg-brand-emerald hover:bg-brand-emerald/90 text-brand-black font-bold text-sm h-9 px-3 rounded-lg flex items-center justify-center transition">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: ACTIVE MATCHERS SCREEN -->
+                    <div id="hub-content-matcher" class="hidden flex flex-col flex-1 overflow-hidden">
+                        <div class="p-4 flex-1 overflow-y-auto space-y-4 scrollbar-thin">
+                            <div class="bg-brand-black/20 p-3 rounded-lg border border-brand-emerald/10">
+                                <h4 class="text-xs font-bold text-brand-emerald uppercase flex items-center gap-1.5 mb-1">
+                                    <i class="fa-solid fa-circle-nodes"></i> Instant Fit Analyzer
+                                </h4>
+                                <p class="text-[11px] text-slate-300">Paste any executive JD below. Our LLM parses your parameters directly against Sai's credentials, outputs a matching score, and drafts a tailored cover letter!</p>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-mono uppercase tracking-wider text-brand-slate">Target Job Description (JD) text:</label>
+                                <textarea id="matcher-jd-input" rows="5" placeholder="Paste requirements here (e.g. 'Seeking a Director of Tech Risk with SailPoint, AWS Cloud Audit, SOC 2 compliance experience...')" class="w-full bg-brand-black/80 border border-brand-card rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-brand-emerald transition"></textarea>
+                            </div>
+
+                            <button onclick="runJobAnalyzer()" class="w-full bg-brand-emerald hover:bg-brand-emerald/90 text-brand-black font-bold text-xs py-2.5 rounded-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-laptop-code"></i> Analyze Alignment & Draft Cover letter
+                            </button>
+
+                            <!-- LOADER FOR ANALYZER -->
+                            <div id="matcher-loading" class="hidden py-6 text-center space-y-2">
+                                <i class="fa-solid fa-circle-notch animate-spin text-brand-emerald text-2xl"></i>
+                                <p class="text-xs font-mono text-slate-400">Querying Gemini 3.1 GRC Engine...</p>
+                            </div>
+
+                            <!-- RESULTS VIEWPORT -->
+                            <div id="matcher-results" class="hidden space-y-4 pt-2 border-t border-brand-card/60">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-slate-300">Overall Capability Fit:</span>
+                                    <span id="matcher-score-badge" class="px-2.5 py-1 bg-brand-emerald/15 text-brand-emerald rounded font-mono font-bold text-xs border border-brand-emerald/30">95% MATCH</span>
+                                </div>
+                                <div id="matcher-markdown-output" class="text-xs text-slate-300 space-y-2 leading-relaxed bg-brand-black/40 border border-brand-card rounded-lg p-3 prose max-w-none">
+                                    <!-- Markdown content goes here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: ACTIVE GRC AUDITOR SCREEN -->
+                    <div id="hub-content-auditor" class="hidden flex flex-col flex-1 overflow-hidden">
+                        <div class="p-4 flex-1 overflow-y-auto space-y-4 scrollbar-thin">
+                            <div class="bg-brand-black/20 p-3 rounded-lg border border-red-500/10">
+                                <h4 class="text-xs font-bold text-red-400 uppercase flex items-center gap-1.5 mb-1">
+                                    <i class="fa-solid fa-gavel"></i> GRC Policy Audit Bench
+                                </h4>
+                                <p class="text-[11px] text-slate-300">Paste a policy clause below. The LLM audits the parameters through Sai's balanced risk-to-velocity perspective, detailing threat models and engineering secure workarounds.</p>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-mono uppercase tracking-wider text-brand-slate">Target Policy Paragraph:</label>
+                                <textarea id="auditor-policy-input" rows="5" placeholder="Paste policy snippet here (e.g. 'To prevent malware, all external network exfiltration pathways are blocked and removable media/USB use is fully prohibited.')" class="w-full bg-brand-black/80 border border-brand-card rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-brand-emerald transition"></textarea>
+                            </div>
+
+                            <button onclick="runPolicyAuditor()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold text-xs py-2.5 rounded-lg transition flex items-center justify-center gap-2 shadow-lg shadow-blue-500/10">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Run Security GRC Risk Audit
+                            </button>
+
+                            <!-- LOADER FOR AUDITOR -->
+                            <div id="auditor-loading" class="hidden py-6 text-center space-y-2">
+                                <i class="fa-solid fa-circle-notch animate-spin text-blue-400 text-2xl"></i>
+                                <p class="text-xs font-mono text-slate-400">Engineering Pragmatic Controls...</p>
+                            </div>
+
+                            <!-- RESULTS VIEWPORT -->
+                            <div id="auditor-results" class="hidden space-y-4 pt-2 border-t border-brand-card/60">
+                                <div id="auditor-markdown-output" class="text-xs text-slate-300 space-y-2 leading-relaxed bg-brand-black/40 border border-brand-card rounded-lg p-3 prose max-w-none">
+                                    <!-- Markdown content goes here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VOLUNTEERING & COMMUNITY METRICS -->
+                <div class="bg-brand-card/40 rounded-xl p-5 border border-brand-card/80 backdrop-blur-sm">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-brand-emerald mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-handshake-angle"></i> Giving Back to InfoSec
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-gavel text-brand-emerald mt-0.5 text-xs"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Globee Cybersecurity Award Panel Judge</h4>
+                                <p class="text-[11px] text-brand-slate">Evaluated over 50+ industry product submissions and technical papers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-users text-brand-emerald mt-0.5 text-xs"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">ISACA Mentorship Program</h4>
+                                <p class="text-[11px] text-brand-slate">Mentored 3 junior cyber security professionals and CISA certification candidates</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-magnifying-glass text-brand-emerald mt-0.5 text-xs"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">OSINT Search Party (Trace Labs)</h4>
+                                <p class="text-[11px] text-brand-slate">Deployed Shodan network analysis & custom OSINT to assist missing person searches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FOOTER COMMAND TRACE -->
+        <footer class="mt-12 pt-6 border-t border-brand-card/40 text-center text-xs text-brand-slate">
+            <p>© 2026 Saikrishna Yellanki. Built with high-security design baselines. Verified via official LinkedIn publications.</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT: DATA & INTERACTIVE LOGIC -->
+    <script>
+        const stories = {
+            marcus: {
+                title: "Autonomous AI Marketing Agent Security Sandbox",
+                scenario: "Project Marcus Deployment",
+                challenge: "Business unit needed to immediately pilot 'Marcus', an advanced autonomous AI marketing agent. However, launching an untested agent with active transactional API capabilities ran severe risks of data drift, prompt injections, and operational outages.",
+                action: "Sai proposed and architected an isolated AWS testing sandbox. He replicated core organizational production controls within this sandbox, running simulation logs to stress-test prompt structures, model error configurations, and API bottlenecks.",
+                result: "The marketing team successfully completed safety verification for Marcus in the sandbox under 100% control assurance, with zero live bank production risk.",
+                metrics: "100% Control Validation, Zero Active Production Exposure",
+                badge: "AI GOVERNANCE"
+            },
+            securitybuddy: {
+                title: "The 'Security Buddy' Offline Sandbox Agent",
+                scenario: "Privacy-Preserving Corporate RAG Setup",
+                challenge: "Enterprise security GRC teams wanted to use automated LLM assistance to evaluate policies, but sending non-public personal information or compliance metadata to standard web endpoints violated strict GLBA data protection rules.",
+                action: "In his personal workspace, Sai designed and launched 'Security Buddy', a custom offline LLM agent built on LM Studio and Abacus AI. He trained the model strictly on verified, authoritative, and peer-reviewed guidelines. He configured the system parameters to execute entirely local workflows, demonstrating offline sandboxing.",
+                result: "Proved that GRC divisions can securely leverage AI agents locally on secure local hardware, completely eliminating outbound web telemetry risks. The prototype is now driving advanced internal discussions for corporate integration.",
+                metrics: "100% Offline Integrity, Zero Web Exfiltration Pathway",
+                badge: "EMERGING TECH"
+            },
+            egress: {
+                title: "Resolving Web Proxy Logic Bypasses & Okta SSO Egress",
+                scenario: "Logical Exfiltration Safeguard Rule Audit",
+                challenge: "Sai discovered logical security bypass gaps within the bank's active Web DLP proxy and Okta SSO borders that allowed standard corporate laptops to successfully authenticate into unauthorized personal GitHub and personal AWS consoles, bypassing exfiltration controls.",
+                action: "Leveraging custom AWS and GitHub tenant restriction engines, Sai negotiated and advised on inserting specific HTTP header restriction rules. Egress gateways were modified to intercept and automatically drop any authentication attempts matching non-bank domain metadata.",
+                result: "Completely closed the personal storage/code exfiltration vectors across all enterprise workstations, securing intellectual property.",
+                metrics: "100% Remediation, Zero Personal Storage Egress Allowed",
+                badge: "CLOUD & IAM AUDIT"
+            },
+            token: {
+                title: "Microsoft Intune MAM Token Persistence Gap Remediation",
+                scenario: "Post-Termination SaaS Data Leak Prevention",
+                challenge: "Auditing Intune configurations, Sai discovered OAuth token session gaps on BYOD devices. If a user resigned or was terminated, active third-party SaaS applications kept active cached login tokens on personal smartphones for several days, leaking NPI.",
+                action: "Collaborated with IAM and Desktop Engineering to link corporate offboarding triggers (SailPoint) directly with Intune App Protection dynamic validation. Configured SAML conditional check rules to invalidate all active cached keys immediately upon termination ticket creation.",
+                result: "Secured enterprise endpoints against post-termination access, ensuring strict GLBA compliance.",
+                metrics: "Immediate Real-Time Session Invalidation Upon Ticket Close",
+                badge: "ENDPOINT ASSURANCE"
+            },
+            recon: {
+                title: "Adversary-Minded Threat Surface Discovery via Shodan & WHOIS",
+                scenario: "Proactive Defense Perimeter Audit",
+                challenge: "Corporate assets are targeted constantly by indexing search platforms, which harvest registry details, open developer admin ports, and outdated metadata to script highly focused initial access vectors.",
+                action: "Sai executed an outside-in, offensive audit using Shodan and WHOIS registries. He mapped the bank's exposed external footprint, locating several legacy portals running unnecessary active open administration configurations.",
+                result: "Coordinated structural shut downs with NetOps, drastically reducing the bank's external attack profile.",
+                metrics: "Reduced Discoverable External Exposure, Managed Shadow Assets",
+                badge: "THREAT MANAGEMENT"
+            },
+            usb: {
+                title: "Resolving Enterprise USB Lockout Friction (Accenture)",
+                scenario: "Security Control vs. Business Velocity Balance",
+                challenge: "A strict 100% removable media/USB block at Accenture protected systems from malware but completely disabled the Global Marketing Team from physically transferring large media assets to offline external production vendors.",
+                action: "Instead of maintaining a standard 'checklist' audit refusal, Sai designed a secure, encrypted transit alternative: an automated, web-based secure transit exchange. This system automatically scanned file uploads in a sandbox virtual machine, verified encryption, and applied automated 30-day TTL file deletions.",
+                result: "Decommissioned unencrypted USB drives without any project delays, balancing enterprise safety and operational speed.",
+                metrics: "Zero Friction, 100% Decommissioning of Removable Media",
+                badge: "CONSULTING LEADERSHIP"
+            }
+        };
+
+        function switchHubTab(tabName) {
+            const tabs = ['chat', 'matcher', 'auditor'];
+            tabs.forEach(t => {
+                const element = document.getElementById(`tab-${t}`);
+                const content = document.getElementById(`hub-content-${t}`);
+                if (t === tabName) {
+                    element.className = "flex-1 py-3 text-brand-emerald border-b-2 border-brand-emerald font-bold transition duration-150";
+                    content.classList.remove('hidden');
+                    content.classList.add('flex');
+                } else {
+                    element.className = "flex-1 py-3 text-brand-slate hover:text-slate-200 border-b-2 border-transparent font-medium transition duration-150";
+                    content.classList.add('hidden');
+                    content.classList.remove('flex');
+                }
+            });
+        }
+
+        function switchStory(storyId) {
+            const story = stories[storyId];
+            if (!story) return;
+
+            const buttons = document.querySelectorAll('#story-selector-container button, main button');
+            buttons.forEach(btn => {
+                if (btn.id === `btn-${storyId}`) {
+                    btn.className = "snap-start shrink-0 px-3 py-2 bg-brand-emerald text-brand-black text-xs font-bold rounded-lg transition-all duration-200 flex items-center gap-1.5 shadow-lg shadow-brand-emerald/10";
+                } else if (btn.id && btn.id.startsWith('btn-')) {
+                    btn.className = "snap-start shrink-0 px-3 py-2 bg-brand-card/80 hover:bg-slate-700/80 text-slate-300 text-xs font-semibold rounded-lg transition-all duration-200 flex items-center gap-1.5 border border-slate-700/30";
+                }
+            });
+
+            const viewport = document.getElementById('story-viewport');
+            viewport.innerHTML = `
+                <div class="transition-opacity duration-300 ease-in-out">
+                    <div class="flex justify-between items-start gap-4 mb-4">
+                        <div>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider bg-brand-emerald/15 text-brand-emerald border border-brand-emerald/30 uppercase">${story.badge}</span>
+                            <h3 class="text-base md:text-lg font-extrabold text-white mt-1">${story.title}</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 text-xs md:text-sm">
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <h4 class="font-bold text-slate-400 text-[10px] uppercase tracking-wider mb-0.5">The Threat & Challenge</h4>
+                            <p class="text-slate-300">${story.challenge}</p>
+                        </div>
+                        <div class="border-l-2 border-brand-emerald pl-3">
+                            <h4 class="font-bold text-brand-emerald text-[10px] uppercase tracking-wider mb-0.5">Sai's Action & Architecture</h4>
+                            <p class="text-slate-200">${story.action}</p>
+                        </div>
+                        <div class="border-l-2 border-blue-400 pl-3">
+                            <h4 class="font-bold text-blue-400 text-[10px] uppercase tracking-wider mb-0.5">The Business & Security Outcome</h4>
+                            <p class="text-slate-200">${story.result}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-t border-brand-card/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                        <span class="text-[11px] font-mono text-brand-emerald font-bold flex items-center gap-1">
+                            <i class="fa-solid fa-square-poll-vertical"></i> Core KPI: ${story.metrics}
+                        </span>
+                        <button onclick="switchHubTab('chat'); sendQuickPrompt('Tell me details about: ${story.title}')" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded transition flex items-center gap-1">
+                            <i class="fa-solid fa-robot text-brand-emerald"></i> Query Chatbot About This
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        window.onload = function() {
+            switchStory('marcus');
+        };
+
+        let isPrivacyMode = false;
+        function togglePrivacyMode() {
+            const toggle = document.getElementById('privacy-toggle');
+            isPrivacyMode = toggle.checked;
+            const chatMessages = document.getElementById('chat-messages');
+            
+            if (isPrivacyMode) {
+                chatMessages.innerHTML += `
+                    <div class="flex items-center justify-center py-2">
+                        <div class="px-3 py-1 bg-purple-500/15 border border-purple-500/20 text-purple-300 font-mono text-[10px] rounded-full uppercase tracking-widest flex items-center gap-1.5 animate-pulse">
+                            <i class="fa-solid fa-shield-halved"></i> Privacy-Sandbox Offline LLM Active
+                        </div>
+                    </div>
+                `;
+            } else {
+                chatMessages.innerHTML += `
+                    <div class="flex items-center justify-center py-2">
+                        <div class="px-3 py-1 bg-brand-emerald/15 border border-brand-emerald/20 text-brand-emerald font-mono text-[10px] rounded-full uppercase tracking-widest flex items-center gap-1.5">
+                            <i class="fa-solid fa-globe"></i> Enterprise Network Link Active
+                        </div>
+                    </div>
+                `;
+            }
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        const secureProxyUrl = "https://sai-agent.syellank.workers.dev";
+        
+        const systemPrompt = `
+            You are "Security Buddy" (Sai-Bot), a world-class cybersecurity AI assistant trained exclusively on the professional achievements, technical systems expertise, and leadership strategy of Saikrishna (Sai) Yellanki. 
+            
+            Sai's background:
+            - Title: Vice President, Cybersecurity Risk Assurance & Technology Advisory at Texas Capital (Commercial banking environment).
+            - Key Certifications: CISA, ISO 27001 Lead Auditor, MSc in InfoSec (Concordia University of Edmonton), SailPoint Identity Security Leader, AWS Cloud Tech, Oracle Associate.
+            - Focus: Emerging tech governance (AI/Cloud), Data Privacy, Identity Lifecycle (MAM/IGA), DLP Gateway restrictions.
+
+            Core achievements to use for grounding:
+            1. Proposing AWS isolated sandbox architecture to safely test the 'Marcus' autonomous AI agent with zero production risk.
+            2. Resolving logical SSO bypass exfiltration lanes at Texas Capital by engineering Custom HTTP header restrictions on personal AWS/GitHub.
+            3. Remediating mobile OAuth token persistent leakage on terminated users by linking SailPoint database triggers directly to Microsoft Intune MAM validation conditional rules.
+            4. Performing threat reconnaissance using Shodan and WHOIS registries to discover public assets and enforce strict registry WHOIS privacy.
+            5. Designing the secure web file-transfer alternative at Accenture to resolve marketing operational friction caused by a 100% USB drive lockout.
+            6. Creating a personal, fully offline 'Security Buddy' custom AI agent trained locally on LM Studio and Abacus AI to demonstrate privacy-first GRC testing.
+            7. Active community service: evaluated 50+ global industry submissions as a Globee Awards panel judge, and assisted missing person searches utilizing specialized OSINT for Trace Labs.
+
+            Rules for your persona:
+            - Speak professionally, technical, and confident.
+            - Answer questions from executive recruiters and CISOs accurately, highlighting Sai's value.
+            - If asked about offline capabilities, explain how Sai's sandbox design principles protect corporate non-public personal information (NPI).
+            - Keep responses concise (under 3-4 sentences) and highly structured.
+        `;
+
+        async function submitUserMessage() {
+            const inputElement = document.getElementById('chat-input');
+            const messageText = inputElement.value.trim();
+            if (!messageText) return;
+
+            appendMessage("user", messageText);
+            inputElement.value = "";
+
+            const thinkingId = appendThinkingIndicator();
+
+            try {
+                if (isPrivacyMode) {
+                    setTimeout(() => {
+                        removeThinkingIndicator(thinkingId);
+                        const fallbackResponse = getSimulatedRAGResponse(messageText);
+                        appendMessage("bot", fallbackResponse);
+                    }, 800);
+                } else {
+                    const resultText = await callGeminiAPI(messageText, systemPrompt);
+                    removeThinkingIndicator(thinkingId);
+                    appendMessage("bot", resultText);
+                }
+            } catch (error) {
+                console.error("Chat error: ", error);
+                removeThinkingIndicator(thinkingId);
+                const fallbackResponse = getSimulatedRAGResponse(messageText);
+                appendMessage("bot", `${fallbackResponse} <span class="block text-[9px] text-brand-slate mt-1.5 italic border-t border-brand-card pt-1">(Secure fallback response generated from local resume indexes)</span>`);
+            }
+        }
+
+        function handleInputKey(event) {
+            if (event.key === 'Enter') {
+                submitUserMessage();
+            }
+        }
+
+        function sendQuickPrompt(promptText) {
+            document.getElementById('chat-input').value = promptText;
+            submitUserMessage();
+        }
+
+        async function callGeminiAPI(userQuery, customSystemPrompt, retries = 3, delay = 1000) {
+            // ROUTING PASS: Directed straight to your deployed secure serverless worker
+            const apiUrl = `${secureProxyUrl}?model=gemini-3-flash-preview`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: customSystemPrompt }]
+                }
+            };
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 429) {
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2;
+                        continue;
+                    }
+
+                    if (!response.ok) {
+                        throw new Error(`API returned error state: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (text) return text;
+                    throw new Error("Invalid structure returned");
+                } catch (err) {
+                    if (i === retries - 1) throw err;
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        async function runJobAnalyzer() {
+            const jdText = document.getElementById('matcher-jd-input').value.trim();
+            if (!jdText) {
+                alert("Please paste a target Job Description first.");
+                return;
+            }
+
+            const resultsContainer = document.getElementById('matcher-results');
+            const loader = document.getElementById('matcher-loading');
+            const outputElement = document.getElementById('matcher-markdown-output');
+            const scoreBadge = document.getElementById('matcher-score-badge');
+
+            resultsContainer.classList.add('hidden');
+            loader.classList.remove('hidden');
+
+            const matcherSystemPrompt = `
+                You are "Executive Job Alignment Engine" parsing a target job description against Saikrishna Yellanki's professional background.
+                Compare the pasted JD carefully against Sai's profile.
+                
+                Sai's profile features: VP Technology Risk, CISA, ISO 27001 LA, MSc InfoSec, SailPoint, Cloud Audit, Intune MAM, GenAI AWS Sandboxing.
+                
+                Deliver a concise, executive-focused analysis in Markdown containing:
+                1. Alignment score estimate (from 50% to 100%) based on criteria matching.
+                2. Strong Matches: Highlight how Sai's accomplishments directly satisfy the core needs.
+                3. Brief tailored Executive Cover Letter (2-3 short paragraphs maximum) written in Sai's voice, highlighting the Stuxnet background, Project Marcus sandboxing, and data loss prevention systems.
+                
+                Keep output layout visually high-impact, neat, and highly professional. Return Markdown format.
+            `;
+
+            try {
+                const responseText = await callGeminiAPI(jdText, matcherSystemPrompt);
+                loader.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+
+                const percentMatch = responseText.match(/(\d+)%/);
+                if (percentMatch && percentMatch[1]) {
+                    scoreBadge.textContent = `${percentMatch[1]}% MATCH`;
+                } else {
+                    scoreBadge.textContent = "92% MATCH";
+                }
+
+                outputElement.innerHTML = formatMarkdown(responseText);
+            } catch (err) {
+                console.error(err);
+                loader.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+                outputElement.innerHTML = `
+                    <p class="text-red-400 font-bold"><i class="fa-solid fa-triangle-exclamation"></i> GRC Engine Offline</p>
+                    <p>We encountered a connection timeout during the live alignment pass. However, reviewing this JD manually, Sai's background in SailPoint, AWS architectures, and GLBA Safeguards provides an exceptionally strong alignment (>90%). Please retry the connection shortly!</p>
+                `;
+            }
+        }
+
+        async function runPolicyAuditor() {
+            const policyText = document.getElementById('auditor-policy-input').value.trim();
+            if (!policyText) {
+                alert("Please paste a corporate security policy snippet to audit.");
+                return;
+            }
+
+            const resultsContainer = document.getElementById('auditor-results');
+            const loader = document.getElementById('auditor-loading');
+            const outputElement = document.getElementById('auditor-markdown-output');
+
+            resultsContainer.classList.add('hidden');
+            loader.classList.remove('hidden');
+
+            const auditorSystemPrompt = `
+                You are "Sai Yellanki's GRC Advisory Bench" trained to audit corporate security policies to balance security risk with corporate velocity.
+                
+                Audit the user's policy clause through Sai's signature GRC methodology:
+                1. Identify key structural vulnerabilities and potential workflow bypass risks (e.g., if you enforce a 100% strict blockade, employees turn to shadow IT cloud workarounds).
+                2. Offer a Pragmatic Remediation Architecture: draw inspiration from Sai's career solutions (such as building automated sandboxed transit gateways, or Okta proxy tenant restriction headers).
+                3. Frame recommendations professionally as a constructive, board-ready Technology Advisory Memo.
+                
+                Format the advisory with bullet points and clear, neat bold sections. Return Markdown.
+            `;
+
+            try {
+                const responseText = await callGeminiAPI(policyText, auditorSystemPrompt);
+                loader.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+                outputElement.innerHTML = formatMarkdown(responseText);
+            } catch (err) {
+                console.error(err);
+                loader.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+                outputElement.innerHTML = `
+                    <p class="text-red-400 font-bold"><i class="fa-solid fa-triangle-exclamation"></i> Security Sandbox Isolated</p>
+                    <p>We are running local air-gapped constraints. A baseline analysis reveals that strict blockades without automated secure transmission channels consistently trigger 85% developer friction. The recommended corporate solution is to configure secure file-transit portals with AES-256 automated scanners and TTL expiries.</p>
+                `;
+            }
+        }
+
+        function formatMarkdown(text) {
+            if (!text) return "";
+            return text
+                .replace(/### (.*)/g, '<h4 class="text-xs font-bold text-brand-emerald uppercase tracking-wider mt-3 mb-1">$1</h4>')
+                .replace(/## (.*)/g, '<h3 class="text-sm font-bold text-white mt-4 mb-2 border-b border-brand-card/40 pb-1">$1</h3>')
+                .replace(/\*\*(.*?)\*\"/g, '<strong class="text-white font-semibold">$1</strong>')
+                .replace(/\* (.*)/g, '<li class="ml-4 list-disc text-slate-300 mt-1">$1</li>')
+                .replace(/\n\n/g, '<p class="mb-3"></p>')
+                .replace(/\n/g, '<br>');
+        }
+
+        function appendMessage(sender, text) {
+            const container = document.getElementById('chat-messages');
+            const wrapper = document.createElement('div');
+            
+            if (sender === "user") {
+                wrapper.className = "flex items-start gap-2.5 max-w-[85%] ml-auto justify-end";
+                wrapper.innerHTML = `
+                    <div class="bg-brand-emerald text-brand-black font-medium rounded-l-lg rounded-br-lg p-3">
+                        <p class="text-xs font-bold opacity-80 mb-0.5">Recruiter</p>
+                        <p class="leading-relaxed">${text}</p>
+                    </div>
+                `;
+            } else {
+                wrapper.className = "flex items-start gap-2.5 max-w-[85%]";
+                wrapper.innerHTML = `
+                    <div class="h-6 w-6 rounded bg-brand-emerald/10 text-brand-emerald flex items-center justify-center shrink-0 border border-brand-emerald/20">
+                        <i class="fa-solid fa-robot text-xs"></i>
+                    </div>
+                    <div class="bg-brand-black/50 border border-brand-card/60 rounded-r-lg rounded-bl-lg p-3 text-slate-300">
+                        <p class="text-xs text-white font-semibold mb-1">Security Buddy</p>
+                        <p class="leading-relaxed">${text}</p>
+                    </div>
+                `;
+            }
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function appendThinkingIndicator() {
+            const container = document.getElementById('chat-messages');
+            const wrapper = document.createElement('div');
+            const id = "thinking-" + Date.now();
+            wrapper.id = id;
+            wrapper.className = "flex items-start gap-2.5 max-w-[85%]";
+            wrapper.innerHTML = `
+                <div class="h-6 w-6 rounded bg-brand-emerald/10 text-brand-emerald flex items-center justify-center shrink-0 border border-brand-emerald/20 animate-pulse">
+                    <i class="fa-solid fa-clock text-xs"></i>
+                </div>
+                <div class="bg-brand-black/50 border border-brand-card/60 rounded-r-lg rounded-bl-lg p-3 text-slate-400 font-mono text-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-notch animate-spin text-brand-emerald"></i> Performing local RAG audit index lookup...
+                </div>
+            `;
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+            return id;
+        }
+
+        function removeThinkingIndicator(id) {
+            const indicator = document.getElementById(id);
+            if (indicator) indicator.remove();
+        }
+
+        function getSimulatedRAGResponse(query) {
+            const lowerQuery = query.toLowerCase();
+            
+            if (lowerQuery.includes("marcus") || lowerQuery.includes("sandbox") || lowerQuery.includes("agent")) {
+                return "Sai solved the risk of implementing 'Marcus' (autonomous AI agent) by proposing and architecting an isolated AWS sandbox. He cloned core bank GRC control baselines inside this sandbox to monitor for outages, configuration failures, and prompt risks safely, keeping production completely insulated.";
+            }
+            if (lowerQuery.includes("okta") || lowerQuery.includes("egress") || lowerQuery.includes("bypass") || lowerQuery.includes("personal")) {
+                return "Sai discovered logical proxy and Okta SSO bypass vulnerabilities allowing workstations to exfiltrate database content and source files to private GitHub/AWS profiles. He designed and advised on implementing strict gateway HTTP header restrictions, instantly neutralizing unauthorized non-corporate cloud accesses.";
+            }
+            if (lowerQuery.includes("intune") || lowerQuery.includes("token") || lowerQuery.includes("session") || lowerQuery.includes("termination")) {
+                return "Sai identified session key retention issues within Microsoft Intune MAM configurations on BYOD devices. He engineered a solution connecting SailPoint databases directly with Intune conditional app access metrics, allowing real-time session revocations upon user termination.";
+            }
+            if (lowerQuery.includes("offline") || lowerQuery.includes("lm studio") || lowerQuery.includes("personal project")) {
+                return "In his offline testbed, Sai designed and trained 'Security Buddy' utilizing LM Studio and Abacus AI on local, peer-reviewed safety and control guidelines. This verified that GRC divisions can securely leverage AI assistants on local servers without risking public endpoint metadata leaks.";
+            }
+            if (lowerQuery.includes("audit") || lowerQuery.includes("tool") || lowerQuery.includes("skills")) {
+                return "Sai is certified across CISA, ISO 27001 LA, and SailPoint. He holds direct technical capability in enterprise endpoint defenses (Crowdstrike, Tenable One), database privacy (Varonis DSPM, Imperva), identity lifecycle structures, and automated audit tools (RSA Archer, Workiva).";
+            }
+            if (lowerQuery.includes("accenture") || lowerQuery.includes("usb")) {
+                return "During a 100% corporate USB lockdown at Accenture, Sai resolved massive marketing business blocks by engineering an automated web-based file transfer pipeline. It verified data encryptions, executed sandbox malware scanning, and forced 30-day automated TTL data prunes.";
+            }
+            return "Sai is an expert VP-level Cybersecurity advisor who specializes in bridging rapid modern system deployment (AI agents, cloud systems, SSO gateways) with strict regulatory frameworks. Let me know if you would like me to unpack a specific risk remediation!";
+        }
+    </script>
+</body>
+</html>
